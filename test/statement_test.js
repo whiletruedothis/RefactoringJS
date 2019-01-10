@@ -8,8 +8,8 @@ describe('Statement', function() {
   it('prints bill', function() {
     var inv_json = JSON.parse(fs.readFileSync('./invoices.json', 'utf8'));
     var plays_json = JSON.parse(fs.readFileSync('./plays.json', 'utf8'));
-    console.log(inv_json[0]);
-    console.log(plays_json);
+    //console.log(inv_json[0]);
+    //console.log(plays_json);
     var bill = statement(inv_json[0], plays_json);
     expect(bill).equal("Statement for BigCo\n\
  Hamlet: $650.00 (55 seats)\n\
